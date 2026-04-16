@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Your Files</h2>
+
+<ul>
+{% for f in files %}
+    <li>
+        <a href="{{f.file_url}}" target="_blank">
+            {{f.file_url}}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
